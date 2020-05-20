@@ -9,7 +9,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="mule-gitFlow" doc:id="3aab668e-e28b-4fd5-a85f-ab712b754f76" >
 		<http:listener doc:name="Listener" doc:id="e4f78507-cce3-42db-bb8a-d4dab2e0d293" config-ref="HTTP_Listener_config" path="/git"/>
-		<set-payload value="My-github" doc:name="Set Payload" doc:id="0f2611e0-e1d0-40aa-a4f4-b74502626806" />
+		<set-payload value="My-github commit" doc:name="Set Payload" doc:id="0f2611e0-e1d0-40aa-a4f4-b74502626806" />
 		<logger level="INFO" doc:name="Logger" doc:id="2592e609-f049-402b-86da-a3c04e39fed1" message="#[payload]"/>
 	</flow>
 </mule>
